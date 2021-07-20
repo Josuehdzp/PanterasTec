@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity.MainActivity">
+
+    <!--<ImageView
+        android:id="@+id/imageViewFONDOPERICOS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />-->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="247dp"
+        android:layout_height="119dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/trans"
+        android:padding="4dp">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="370dp"
+            android:layout_height="192dp"
+            android:background="@color/fig1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ScrollBOTONES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:background="@color/trans"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/LinearBOTONES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LinearIzq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/reTecnologico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonTecnologico"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewATecnologico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/tecnologico"
+                        android:textColor="#FFFFFF" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reAvisos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonAvisos"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewAvisos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/avisos"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reVinculacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonVinculacion"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewVinculacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/vinculacion"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reContacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonContacto"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:foregroundTint="@color/naranjaprincipal"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/contacto"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearDer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/reOfertaEducativa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonOfertaEducativa"
+                        android:layout_width="174dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewOfertaEducativa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/ofertaeducativa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reEstudiantes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonEstudiantes"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewEstudiantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/estudiantes"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rePortalweb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPortalweb"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewPortalweb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/portal_web"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reAcerca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonAcerca"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewPortalweb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/acerca_de"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

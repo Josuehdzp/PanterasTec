@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerFeeds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/icono_escencial_internet"
+        android:scrollbarStyle="insideOverlay">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/idAvisosToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/interfaz_overlay_bajo_invertida"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme"
+            app:title="@string/avisos"
+            app:titleTextColor="@color/blanco" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

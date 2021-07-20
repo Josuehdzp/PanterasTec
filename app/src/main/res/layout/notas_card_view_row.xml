@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:descendantFocusability="blocksDescendants"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:id="@+id/cv"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardBackgroundColor="#8bad0c">
+      <!--  card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="4dp"-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp" android:descendantFocusability="blocksDescendants"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/l_layout"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wordtext"
+                android:textColor="#000"
+                android:textSize="15sp"
+                />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_below="@+id/l_layout"
+                android:id="@+id/expandableLayout" >
+                <!--android:visibility="gone"-->
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#3c4042" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:text="Definition: "
+                        android:layout_margin="1dp"
+                        android:gravity="start|center"
+                        android:textColor="#000"
+                        android:id="@+id/mean"
+                        />
+
+                <TextView
+                    android:id="@+id/meaningtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mean"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="left"
+                    android:text="Predio"
+                    android:textColor="#606062"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/meaningtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meaningtext"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="left"
+                    android:text="Estado"
+                    android:textColor="#606062"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

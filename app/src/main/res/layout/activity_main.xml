@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFONDOPERICOS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:id="@+id/ScrollBOTONES"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/trans"
+        android:paddingBottom="8dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/LinearBOTONES"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingBottom="18dp">
+
+            <RelativeLayout
+                android:id="@+id/reBOTONES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
+
+
+                <RelativeLayout
+                    android:id="@+id/reAcerca"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="201dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonAcerca"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewPortalweb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/acerca_de"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rePortalweb"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="141dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonPortalweb"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewPortalweb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/portal_web"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reContacto"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="201dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonContacto"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:foregroundTint="@color/naranjaprincipal"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/contacto"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reEstudiantes"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="85dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonEstudiantes"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewEstudiantes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/estudiantes"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reVinculacion"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="141dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonVinculacion"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewVinculacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/vinculacion"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reTecnologico"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonTecnologico"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewATecnologico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/tecnologico"
+                        android:textColor="#FFFFFF" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reOfertaEducativa"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonOfertaEducativa"
+                        android:layout_width="174dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewOfertaEducativa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/ofertaeducativa"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/reHorarios"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="202dp"
+                    android:layout_marginTop="85dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonHorarios"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="#11000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewHorarios"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/horarios"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+-->
+
+                <RelativeLayout
+                    android:id="@+id/reAvisos"
+                    android:layout_width="160dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="85dp"
+                    android:background="@drawable/fig1">
+
+                    <ImageButton
+                        android:id="@+id/imageButtonAvisos"
+                        android:layout_width="171dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="11dp"
+                        android:background="@color/trans"
+                        android:clickable="true"
+                        android:contentDescription="@string/todo"
+                        android:focusable="true"
+                        android:onClick="onClick" />
+
+                    <TextView
+                        android:id="@+id/textViewAvisos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/bangers"
+                        android:text="@string/avisos"
+                        android:textColor="#FFFFFF"
+                        tools:ignore="RelativeOverlap" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:background="@color/trans"
+        app:layout_constraintBottom_toTopOf="@+id/ScrollBOTONES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="370dp"
+            android:layout_height="192dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/fig1" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

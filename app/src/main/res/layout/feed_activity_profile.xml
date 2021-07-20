@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.Pericos.ITSVC.App.Feeds.FeedClickActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/click_created_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8c000000"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp"
+                    android:text="Creacion"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/click_status_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8c000000"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="Estado" />
+
+                <TextView
+                    android:id="@+id/click_story"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8c000000"
+                    android:gravity="center"
+                    android:paddingStart="6dp"
+                    android:paddingTop="3dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="Historia" />
+
+                <ImageView
+                    android:id="@+id/click_full_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    />
+
+                <TextView
+                    android:id="@+id/click_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8c000000"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Mensaje" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/click_permalink_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Link"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/shareProfile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/click_permalink_url"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/facebook" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Pericos.ITSVC.App">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="someString"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/pericocontituloyfondo2sombra"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/pericocontituloyfondo2sombra"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".PantallaBienvenida"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- tools:replace="android:appComponentFactory"> -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <!--
+<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        -->
+        <!--  -->
+        <activity
+            android:name=".PantallaMain.Departamentos"
+            android:label="Departamentos"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity.MainActivity">
+        </activity>
+
+        <activity android:name=".MainActivity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Pericos.ITSVC.App.MainActivity.MainActivity" />
+        </activity>
+        <activity android:name=".ViewPager_Activity" />
+        <activity
+            android:name=".PantallaMain.ContactoActivity"
+            android:label="@string/contacto_itsvc"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".MainActivity.MainActivity" />
+        <activity
+            android:name=".PantallaMain.CalificacionesActivity"
+            android:label="@string/ofertaeducativa"
+            android:parentActivityName=".MainActivity.MainActivity" />
+        <activity
+            android:name=".PantallaMain.PortalwebActivity"
+            android:label="@string/portal_web"
+            android:parentActivityName=".MainActivity.MainActivity" />
+        <activity
+            android:name=".Aspirantes.OfertaEducativaActivity"
+            android:label="Oferta educativa"
+            android:parentActivityName=".MainActivity.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Pericos.ITSVC.App.MainActivity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Facebook.MainFacebookJsonParse"
+            android:label="Noticias"
+            android:parentActivityName=".MainActivity.MainActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Facebook.MainFacebookJsonParseNext1"
+            android:label="Noticias"
+            android:parentActivityName=".MainActivity.MainActivity" />
+        <!--
+<meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        -->
+        <activity
+            android:name=".PantallaMain.SocialActivity"
+            android:label="Social"
+            android:parentActivityName=".MainActivity.MainActivity" />
+
+
+        <!-- =================================PERICOS============================================= -->
+        <activity android:name=".Chat.Activity.MenuActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Chat.Activity.MensajeriaActivityISIC"
+            android:parentActivityName=".Chat.Activity.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Chat.Activity.MensajeriaActivityIIAL" />
+        <activity android:name=".Chat.Activity.MensajeriaActivityIFOR" />
+        <activity android:name=".Chat.Activity.MensajeriaActivityIGEM" />
+        <activity android:name=".Chat.Activity.MensajeriaActivityIGEO" />
+        <activity
+            android:name=".Nosotros"
+            android:theme="@style/ToolbarColorTransparente" />
+        <activity
+            android:name=".NvoIngreso"
+            android:label="Nuevo Ingreso"
+            android:parentActivityName=".TecnologicoMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MensajeDirector"
+            android:label="Mensaje del Director"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".TecnologicoMenu"/>
+        <activity
+            android:name=".Historia"
+            android:label="@string/historia_titulo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".TecnologicoMenu"/>
+        <activity
+            android:name=".Alumnos"
+            android:label="Horario prueba"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Estudiantes"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".DashBoard"/>
+        <activity
+            android:name=".EstudiantesPerfil"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".Estudiantes"/>
+
+
+
+        <activity
+            android:name=".Notas.DictionaryMainActivity"
+            android:label="Notas"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".TecnologicoMenu"
+            android:label="Tecnologico"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".DashBoard"/>
+        <activity
+            android:name=".HorarioIFOR"
+            android:label="Ing. Forestal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HorarioIGEO"
+            android:label="Ing. Geociencias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HorarioIGEM"
+            android:label="Ing. Gestión"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ISIC"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IIAL"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IFOR"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IGEO"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IGEM"
+            android:label="@string/titulo_sistemas"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Horarios.HorarioPersonalizado" />
+        <activity
+            android:name=".Horarios.DialogoHorario"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+
+        <activity android:name=".Notas.NotasMain"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".Notas.NotasCompleta"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".DashBoard"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".PantallaMain.AcercaDeActivity"
+            android:label="Acerca de la aplicacion"
+            android:parentActivityName=".DashBoard" />
+
+        <activity
+            android:name=".Feeds.FeedMainRecycler"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".DashBoard"/>
+
+        <activity
+            android:name=".Feeds.FeedClickActivity"/>
+
+        <activity
+            android:name=".Chat.Activity.LoginActivity"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".DashBoard"/>
+
+        <activity
+            android:name=".Chat.Activity.RegistroActivityISIC"
+            android:theme="@style/ToolbarColor"
+            android:parentActivityName=".Chat.Activity.LoginActivity"/>
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAGT3_nzTY2_VVgZGapzGFwR6d2lrIu2o0" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+    <!--
+        //////////Linea para hacer que el activity se vaya hacia atras con la flecha del action bar
+    android:parentActivityName="com.yaaa.despues.despues.MainActivity.MainActivity"////////////////////////////////
+    -->
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

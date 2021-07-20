@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.github.florent37.arclayout.ArcLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:elevation="10dp"
+                        app:arc_position="bottom"
+                        app:arc_height="20dp"
+                        app:arc_cropDirection="cropInside">
+
+                        <com.flaviofaria.kenburnsview.KenBurnsView
+                            android:id="@+id/idEstudiantesFotoHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:src="@drawable/edificio"
+                            android:scaleType="centerCrop"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="@drawable/interfaz_overlay_bajo" />
+
+
+                    </com.github.florent37.arclayout.ArcLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true">
+
+                <FrameLayout
+                    android:id="@+id/idEstudiantesContenedor"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="190dp">
+
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.github.florent37.arclayout.ArcLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:arc_height="20dp"
+                            app:arc_cropDirection="cropOutside"
+                            app:arc_position="top">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:background="@color/negroprincipal"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/idEstudiantesNombreUsuario"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:autoSizeMaxTextSize="16sp"
+                                        android:autoSizeMinTextSize="10sp"
+                                        android:autoSizeStepGranularity="2sp"
+                                        android:fontFamily="@font/ubuntu_medium"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:shadowColor="@color/black"
+                                        android:textColor="@color/blanco"
+                                        android:text="Nombre"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/idEstudiantesCorreoUsuario"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:autoSizeMaxTextSize="13sp"
+                                        android:autoSizeMinTextSize="10sp"
+                                        android:autoSizeStepGranularity="2sp"
+                                        android:fontFamily="@font/ubuntu_light"
+                                        android:shadowDx="1.5"
+                                        android:shadowDy="1.3"
+                                        android:shadowRadius="1.6"
+                                        android:textColor="@color/blanco"
+                                        android:shadowColor="@color/black"
+                                        android:text="Correo"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginStart="15dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="15dp"
+                                        android:background="@color/blanco" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:elevation="3dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesTituloMatriculaUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:autoSizeMaxTextSize="14sp"
+                                                android:autoSizeMinTextSize="10sp"
+                                                android:autoSizeStepGranularity="2sp"
+                                                android:fontFamily="@font/ubuntu_medium"
+                                                android:shadowDx="1.5"
+                                                android:shadowDy="1.3"
+                                                android:shadowRadius="1.6"
+                                                android:shadowColor="@color/black"
+                                                android:textColor="@color/blanco"
+                                                android:text="Matricula"
+                                                android:textAlignment="center"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesMatriculaUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="10dp"
+                                                android:autoSizeMaxTextSize="12sp"
+                                                android:autoSizeMinTextSize="10sp"
+                                                android:autoSizeStepGranularity="2sp"
+                                                android:fontFamily="@font/ubuntu_light"
+                                                android:shadowDx="1.5"
+                                                android:shadowDy="1.3"
+                                                android:shadowRadius="1.6"
+                                                android:shadowColor="@color/black"
+                                                android:textColor="@color/blanco"
+                                                android:text="matricula"
+                                                android:textAlignment="center"
+                                                android:textSize="12sp" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/idEstudiantesTituloCarreraUsuario"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="10dp"
+                                                android:autoSizeMaxTextSize="14sp"
+                                                android:autoSizeMinTextSize="10sp"
+                                                android:autoSizeStepGranularity="2sp"
+                                                android:fontFamily="@font/ubuntu_medium"
+                                                android:shadowDx="1.5"
+                                                android:shadowDy="1.3"
+                                                android:shadowRadius="1.6"
+                                                android:shadowColor="@color/black"
+                                                android:textColor="@color/blanco"
+                                                android:text="Carrera"
+                                                android:textAlignment="center"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/idEstudiantesCarreraUsuario"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    android:autoSizeMaxTextSize="10sp"
+                                                    android:autoSizeMinTextSize="9sp"
+                                                    android:autoSizeStepGranularity="2sp"
+                                                    android:fontFamily="@font/ubuntu_light"
+                                                    android:shadowDx="1.5"
+                                                    android:shadowDy="1.3"
+                                                    android:shadowRadius="1.6"
+                                                    android:shadowColor="@color/black"
+                                                    android:textColor="@color/blanco"
+                                                    android:text="carrera"
+                                                    android:textAlignment="center"
+                                                    android:textSize="10sp" />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+                                            <ImageView
+                                                android:id="@+id/idEstudiantesIconoCarreraUsuario"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:padding="5dp"
+                                                android:layout_gravity="center"
+                                                android:adjustViewBounds="true"
+                                                android:src="@drawable/itsvclogo"/>
+
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/cardEstu1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardhorario"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginEnd="5dp"
+                                            app:cardBackgroundColor="@color/azulnotas"
+                                            android:layout_weight="1"
+                                            app:cardCornerRadius="7dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:padding="3dp"
+                                                    android:src="@drawable/icono_horario" />
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_gravity="center_vertical"
+                                                    android:autoSizeMaxTextSize="15sp"
+                                                    android:autoSizeMinTextSize="9sp"
+                                                    android:autoSizeStepGranularity="2sp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:shadowColor="@color/black"
+                                                    android:shadowDx="1.5"
+                                                    android:shadowDy="1.3"
+                                                    android:shadowRadius="1.6"
+                                                    android:textColor="@color/blanco"
+                                                    android:text="Horario personalizado"
+                                                    android:textAlignment="center"
+                                                    android:textSize="15sp" />
+
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardchat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:cardBackgroundColor="@color/azulnotas"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_weight="1"
+                                            app:cardCornerRadius="7dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <ImageView
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="50dp"
+                                                        android:padding="3dp"
+                                                        android:src="@drawable/icono_chat" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center"
+                                                        android:autoSizeMaxTextSize="15sp"
+                                                        android:autoSizeMinTextSize="9sp"
+                                                        android:autoSizeStepGranularity="2sp"
+                                                        android:fontFamily="@font/ubuntu"
+                                                        android:shadowColor="@color/black"
+                                                        android:shadowDx="1.5"
+                                                        android:shadowDy="1.3"
+                                                        android:shadowRadius="1.6"
+                                                        android:textColor="@color/blanco"
+                                                        android:text="Chat"
+                                                        android:textAlignment="center"
+                                                        android:textSize="15sp"
+                                                        tools:ignore="UnusedAttribute" />
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/cardEstu2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardnotas"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:cardBackgroundColor="@color/azulnotas"
+                                            android:layout_marginEnd="5dp"
+                                            android:layout_weight="1"
+                                            android:elevation="5dp"
+                                            app:cardCornerRadius="7dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:padding="3dp"
+                                                    android:src="@drawable/icono_cuadernodenotas" />
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autoSizeMaxTextSize="15sp"
+                                                    android:autoSizeMinTextSize="10sp"
+                                                    android:autoSizeStepGranularity="2sp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:shadowColor="@color/black"
+                                                    android:shadowDx="1.5"
+                                                    android:shadowDy="1.3"
+                                                    android:shadowRadius="1.6"
+                                                    android:textColor="@color/blanco"
+                                                    android:text="Tus Notas"
+                                                    android:textAlignment="center"
+                                                    android:textSize="15sp" />
+
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/cardhorarioescolar"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:cardBackgroundColor="@color/azulnotas"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_weight="1"
+                                            app:cardCornerRadius="7dp">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="1"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <ImageView
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="50dp"
+                                                        android:padding="3dp"
+                                                        android:src="@drawable/icono_calendario" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:autoSizeMaxTextSize="15sp"
+                                                        android:autoSizeMinTextSize="10sp"
+                                                        android:autoSizeStepGranularity="2sp"
+                                                        android:fontFamily="@font/ubuntu"
+                                                        android:shadowColor="@color/black"
+                                                        android:shadowDx="1.5"
+                                                        android:shadowDy="1.3"
+                                                        android:shadowRadius="1.6"
+                                                        android:textColor="@color/blanco"
+                                                        android:text="Horario escolar"
+                                                        android:textAlignment="center"
+                                                        android:textSize="15sp"/>
+
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/cardEstu3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/buttonstyle"
+                                        android:backgroundTint="@color/rojo_bajo"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:id="@+id/idEstudiantescardCerrarSesion"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            app:cardBackgroundColor="@color/rojo_bajo"
+                                            android:layout_weight="1">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical">
+
+
+
+                                                <TextView
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:autoSizeMaxTextSize="15sp"
+                                                    android:autoSizeMinTextSize="10sp"
+                                                    android:autoSizeStepGranularity="2sp"
+                                                    android:fontFamily="@font/ubuntu"
+                                                    android:textStyle="bold"
+                                                    android:shadowColor="@color/black"
+                                                    android:shadowDx="1.5"
+                                                    android:shadowDy="1.3"
+                                                    android:shadowRadius="1.6"
+                                                    android:textColor="@color/blanco"
+                                                    android:text="Cerrar Sesión"
+                                                    android:textAlignment="center"
+                                                    android:textSize="15sp"
+                                                    app:autoSizeTextType="uniform" />
+
+
+                                            </LinearLayout>
+
+                                        </androidx.cardview.widget.CardView>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+                        </com.github.florent37.arclayout.ArcLayout>
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+                </FrameLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idEstudiantesFotoUsuarioMargen"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignEnd="@id/idEstudiantesContenedor"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginTop="147.5dp"
+                    android:src="@color/colorAccent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/idEstudiantesFotoUsuario"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignEnd="@id/idEstudiantesContenedor"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginTop="150dp"
+                    android:src="@drawable/perfilpericodefault" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/idEstudiantesToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                app:theme="@style/ToolbarColor"
+                app:popupTheme="@style/AppTheme"
+                app:title="Estudiantes"
+                app:titleTextColor="@color/blanco"
+                android:background="@drawable/interfaz_overlay_bajo_invertida"
+                android:minHeight="?attr/actionBarSize" />
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

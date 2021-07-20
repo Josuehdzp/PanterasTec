@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="9sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/nombreMensaje"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginEnd="5dp"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="9sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu"
+                                android:gravity="end"
+                                android:text="Perico"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/mensajeMensaje"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textIsSelectable="true"
+                            android:autoLink="all"
+                            android:layout_marginTop="3dp"
+                            android:autoSizeMaxTextSize="13sp"
+                            android:autoSizeMinTextSize="9sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:text="Hola bienvenido"
+                            android:textAlignment="viewStart"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/mensajeFoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:riv_corner_radius="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:adjustViewBounds="true"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/horaMensaje"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_gravity="end"
+                            android:autoSizeMaxTextSize="9sp"
+                            android:autoSizeMinTextSize="7sp"
+                            android:autoSizeStepGranularity="2sp"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.3"
+                            android:shadowRadius="1.6"
+                            android:textColor="@color/blanco"
+                            android:fontFamily="@font/ubuntu_light"
+                            android:text="Hace minutos"
+                            android:textIsSelectable="true"
+                            android:textSize="9sp"
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5sp"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoPerfilMensaje"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="3dp"
+            android:layout_gravity="end"
+            android:src="@drawable/perfilpericodefault" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

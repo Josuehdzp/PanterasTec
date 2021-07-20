@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/idFeedCompletoFullpictureHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/edificio"
+                    android:scaleType="centerCrop"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/interfaz_overlay_bajo"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/idFeedCompletoCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="@color/negroprincipal"
+                        android:layout_marginEnd="5dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoCreacion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="@string/fecha_de_creacion"
+                                app:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/blanco"
+                                android:textSize="10sp" />
+
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoTitulo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="9dp"
+                                app:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="17sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="@string/oferta_electrica_titulo_quehace"
+                                android:textAlignment="textStart"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:scrollHorizontally="true"
+                                android:textColor="@color/blanco"
+                                 />
+
+                            <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:autoSizeMaxTextSize="10sp"
+                                android:autoSizeMinTextSize="7sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:textSize="10sp"
+                                android:text="Agrego fotos"/>
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoStory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:textSize="10sp"
+                                android:autoSizeMaxTextSize="10sp"
+                                android:autoSizeMinTextSize="7sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="@string/especialidad_titulo"/>
+
+                        </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <Button
+                                    android:layout_width="7dp"
+                                    android:layout_height="7dp"
+                                    android:layout_centerInParent="true"
+                                    android:backgroundTint="@color/blanco"
+                                    android:background="@drawable/buttonstyle"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_margin="10dp"
+                                    android:background="@color/blanco"/>
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoMensaje"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="15sp"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeStepGranularity="2sp"
+                                android:textSize="15sp"
+                                android:autoLink="all"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1.5"
+                                android:shadowDy="1.3"
+                                android:shadowRadius="1.6"
+                                android:textColor="@color/blanco"
+                                android:fontFamily="@font/ubuntu_light"
+                                android:text="@string/mision_texto"/>
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/idFeedCompletoFullpicture"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                app:riv_corner_radius="7dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside" />
+
+                            <TextView
+                                android:id="@+id/idFeedCompletoPermalink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/idFeedCompletoVerFacebook"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    app:contentPadding="4dp"
+                                    app:cardBackgroundColor="@color/azul"
+                                    app:cardElevation="2dp"
+                                    app:cardCornerRadius="9dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:src="@drawable/ic_like"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="7dp"
+                                            android:fontFamily="@font/ubuntu_medium"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="1.5"
+                                            android:shadowDy="1.3"
+                                            android:shadowRadius="1.6"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="9sp"
+                                            android:text="Ver en Facebook"/>
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/idFeedCompletoCompartir"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    app:contentPadding="4dp"
+                                    app:cardBackgroundColor="@color/colorPrimary"
+                                    app:cardElevation="2dp"
+                                    app:cardCornerRadius="9dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="25dp"
+                                            android:layout_marginStart="4dp"
+                                            android:layout_marginEnd="4dp"
+                                            android:background="@color/blanco"
+                                            android:src="@drawable/ic_share_btn"/>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="7dp"
+                                            android:fontFamily="@font/ubuntu_medium"
+                                            android:shadowColor="@color/black"
+                                            android:shadowDx="1.5"
+                                            android:shadowDy="1.3"
+                                            android:shadowRadius="1.6"
+                                            android:textColor="@color/blanco"
+                                            android:textSize="9sp"
+                                            android:text="Compartir"/>
+
+
+                                    </LinearLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+<!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Follow Me"
+            android:textColor="#fff" />
+-->
+
+
+    </LinearLayout>
+
+
+</ScrollView>

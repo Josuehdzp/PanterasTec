@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.Pericos.ITSVC.App"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "alpha 1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.3.0-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha02'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    //implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    //implementation project(':facebook')
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+///Json
+    implementation 'com.android.volley:volley:1.1.0'
+    //// PDF
+    //implementation 'com.github.barteksc:android-pdf-viewer:3.0.0-beta.5'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+
+
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.0.1'
+    implementation 'com.google.firebase:firebase-core:17.0.1'
+    implementation 'com.google.firebase:firebase-database:18.0.1' //Base de Datos
+    implementation 'com.google.firebase:firebase-storage:18.1.1'  //Base de Archivos
+    implementation 'com.google.firebase:firebase-auth:18.1.0'  //Autenticacion de firebase
+    implementation 'com.firebaseui:firebase-ui-database:5.0.0' //FirebaseUI for Firebase Realtime Database
+
+    //Agregados
+    implementation 'de.hdodenhof:circleimageview:2.2.0' //Imagen Circular
+    implementation 'com.kbeanie:multipicker:1.5' // Multilibreria
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final' //Ayuda a ver la hora bonito
+    implementation 'com.makeramen:roundedimageview:2.3.0' //Imagenes circulares
+    implementation 'com.github.yukuku:ambilwarna:2.0.1' //Color picker
+    implementation 'com.github.smarteist:autoimageslider:1.3.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.github.danimahardhika:cafebar:1.3.2'
+}
+apply plugin: 'com.google.gms.google-services'
